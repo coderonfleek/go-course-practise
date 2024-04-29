@@ -1,0 +1,7 @@
+{{define "teamList"}}
+<ul>
+    {{range $index, $staff := .TeamList}}
+        <li>{{$index}}: {{$staff.Name}} ({{$staff.Role}})</li>
+    {{end}}
+</ul>
+{{end}}
